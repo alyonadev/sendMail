@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Send Mail</title>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
 </head>
-<meta charset="UTF-8">
+
 <body>
-  <h1>Send Mail Form</h1>
-  <form id="sendMailForm" action="sendMail.php" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone" required><br><br>
-    <label for="town">Town:</label>
-    <input type="text" id="town" name="town" required><br><br>
-    <input type="submit" value="Send Mail">
+  <h1>Contact Us</h1>
+  <form action="sendMail.php" method="post">
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="text" name="phone" placeholder="Your Phone Number">
+    <input type="text" name="city" placeholder="Your City">
+    <input type="submit" value="Submit">
   </form>
-  
 </body>
+
 </html>
